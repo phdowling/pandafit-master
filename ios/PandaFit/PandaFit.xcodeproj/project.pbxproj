@@ -1,0 +1,856 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07DB1B7F35EB293B46BF86D6 /* Pods_PandaFit_WatchKit_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 100A1BFEC29D10869FD8494E /* Pods_PandaFit_WatchKit_App.framework */; };
+		47D8A6FA51959841C39C090D /* Pods_PandaFit_WatchKit_Extension.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28236F9F0EF80AAB6F768E96 /* Pods_PandaFit_WatchKit_Extension.framework */; };
+		5C4B9AF71A85B0774E69A8E5 /* Pods_PandaFit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEB2AAA63B00A83D8CB4099D /* Pods_PandaFit.framework */; };
+		DC064B371D8D5C8F0040BFDF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC064B361D8D5C8F0040BFDF /* Assets.xcassets */; };
+		DC0A076A1D8D6C9E0008E284 /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0A07691D8D6C9E0008E284 /* FriendsViewController.swift */; };
+		DC0A076E1D8D6CCD0008E284 /* FriendTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0A076D1D8D6CCD0008E284 /* FriendTableViewCell.swift */; };
+		DC0A076F1D8DCF650008E284 /* PGNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9BED51D8CC3F20074A34F /* PGNetworkController.swift */; };
+		DC0A07711D8DD0A10008E284 /* PFWatchNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC0A07701D8DD0A10008E284 /* PFWatchNetworkController.swift */; };
+		DC5C3B7D1D8D44B0003349E8 /* HealthKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC5C3B7C1D8D44B0003349E8 /* HealthKit.framework */; };
+		DC7A29C91D8C944C006D04E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A29C81D8C944C006D04E4 /* AppDelegate.swift */; };
+		DC7A29CB1D8C944C006D04E4 /* StatusViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A29CA1D8C944C006D04E4 /* StatusViewController.swift */; };
+		DC7A29CE1D8C944C006D04E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7A29CC1D8C944C006D04E4 /* Main.storyboard */; };
+		DC7A29D01D8C944C006D04E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7A29CF1D8C944C006D04E4 /* Assets.xcassets */; };
+		DC7A29D31D8C944C006D04E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7A29D11D8C944C006D04E4 /* LaunchScreen.storyboard */; };
+		DC7A29D81D8C944C006D04E4 /* PandaFit WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = DC7A29D71D8C944C006D04E4 /* PandaFit WatchKit App.app */; };
+		DC7A29DE1D8C944C006D04E4 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7A29DC1D8C944C006D04E4 /* Interface.storyboard */; };
+		DC7A29E71D8C944C006D04E4 /* PandaFit WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = DC7A29E61D8C944C006D04E4 /* PandaFit WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC7A29EE1D8C944C006D04E4 /* StatusInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A29ED1D8C944C006D04E4 /* StatusInterfaceController.swift */; };
+		DC7A29F21D8C944C006D04E4 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A29F11D8C944C006D04E4 /* NotificationController.swift */; };
+		DC7A29F41D8C944C006D04E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7A29F31D8C944C006D04E4 /* Assets.xcassets */; };
+		DC7A2A041D8C98DE006D04E4 /* PGHealthKitManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7A2A031D8C98DD006D04E4 /* PGHealthKitManager.swift */; };
+		DCE9BECD1D8CB1940074A34F /* Panda.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9BECC1D8CB1940074A34F /* Panda.swift */; };
+		DCE9BECF1D8CB6D20074A34F /* Panda.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9BECC1D8CB1940074A34F /* Panda.swift */; };
+		DCE9BED11D8CC2680074A34F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE9BED01D8CC2680074A34F /* Media.xcassets */; };
+		DCE9BED31D8CC2700074A34F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE9BED01D8CC2680074A34F /* Media.xcassets */; };
+		DCE9BED41D8CC2710074A34F /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCE9BED01D8CC2680074A34F /* Media.xcassets */; };
+		DCE9BED61D8CC3F20074A34F /* PGNetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9BED51D8CC3F20074A34F /* PGNetworkController.swift */; };
+		DCE9BED81D8CD0A00074A34F /* LevelSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCE9BED71D8CD0A00074A34F /* LevelSelectionViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC7A29D91D8C944C006D04E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC7A29BD1D8C944C006D04E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC7A29D61D8C944C006D04E4;
+			remoteInfo = "PandaFit WatchKit App";
+		};
+		DC7A29E81D8C944C006D04E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DC7A29BD1D8C944C006D04E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC7A29E51D8C944C006D04E4;
+			remoteInfo = "PandaFit WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC7A29FB1D8C944C006D04E4 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DC7A29E71D8C944C006D04E4 /* PandaFit WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7A29FF1D8C944C006D04E4 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				DC7A29D81D8C944C006D04E4 /* PandaFit WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		100A1BFEC29D10869FD8494E /* Pods_PandaFit_WatchKit_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit_WatchKit_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		28236F9F0EF80AAB6F768E96 /* Pods_PandaFit_WatchKit_Extension.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit_WatchKit_Extension.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FC171837E20085A38468E8C /* Pods-PandaFit WatchKit Extension.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit WatchKit Extension.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit WatchKit Extension/Pods-PandaFit WatchKit Extension.debug.xcconfig"; sourceTree = "<group>"; };
+		7C9BCE9EF609D6226CE99CAD /* Pods-PandaFit.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit.release.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit/Pods-PandaFit.release.xcconfig"; sourceTree = "<group>"; };
+		A8BA41AE778436D0A489B1C9 /* Pods-PandaFit WatchKit App.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit WatchKit App.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit WatchKit App/Pods-PandaFit WatchKit App.debug.xcconfig"; sourceTree = "<group>"; };
+		B59CB3E9CCAB43BAB7CE4D06 /* Pods-PandaFit WatchKit App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit WatchKit App.release.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit WatchKit App/Pods-PandaFit WatchKit App.release.xcconfig"; sourceTree = "<group>"; };
+		CEB2AAA63B00A83D8CB4099D /* Pods_PandaFit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PandaFit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D7E423A337E377C69AE33C70 /* Pods-PandaFit.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit/Pods-PandaFit.debug.xcconfig"; sourceTree = "<group>"; };
+		DC064B361D8D5C8F0040BFDF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC0A07691D8D6C9E0008E284 /* FriendsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
+		DC0A076D1D8D6CCD0008E284 /* FriendTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FriendTableViewCell.swift; sourceTree = "<group>"; };
+		DC0A07701D8DD0A10008E284 /* PFWatchNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PFWatchNetworkController.swift; sourceTree = "<group>"; };
+		DC5C3B7C1D8D44B0003349E8 /* HealthKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = HealthKit.framework; path = System/Library/Frameworks/HealthKit.framework; sourceTree = SDKROOT; };
+		DC7A29C51D8C944C006D04E4 /* PandaFit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PandaFit.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7A29C81D8C944C006D04E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC7A29CA1D8C944C006D04E4 /* StatusViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusViewController.swift; sourceTree = "<group>"; };
+		DC7A29CD1D8C944C006D04E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DC7A29CF1D8C944C006D04E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC7A29D21D8C944C006D04E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC7A29D41D8C944C006D04E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7A29D71D8C944C006D04E4 /* PandaFit WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "PandaFit WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7A29DD1D8C944C006D04E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		DC7A29E11D8C944C006D04E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7A29E61D8C944C006D04E4 /* PandaFit WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "PandaFit WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7A29EC1D8C944C006D04E4 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		DC7A29ED1D8C944C006D04E4 /* StatusInterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusInterfaceController.swift; sourceTree = "<group>"; };
+		DC7A29F11D8C944C006D04E4 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		DC7A29F31D8C944C006D04E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC7A29F51D8C944C006D04E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7A2A031D8C98DD006D04E4 /* PGHealthKitManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PGHealthKitManager.swift; sourceTree = "<group>"; };
+		DCE9BECC1D8CB1940074A34F /* Panda.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Panda.swift; path = PandaFit/Panda.swift; sourceTree = "<group>"; };
+		DCE9BED01D8CC2680074A34F /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		DCE9BED51D8CC3F20074A34F /* PGNetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = PGNetworkController.swift; path = ../PGNetworkController.swift; sourceTree = "<group>"; };
+		DCE9BED71D8CD0A00074A34F /* LevelSelectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSelectionViewController.swift; sourceTree = "<group>"; };
+		DCF881E71D8CE0D0000F9C76 /* PandaFit.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PandaFit.entitlements; sourceTree = "<group>"; };
+		E2A8DD603A622DEEBA1FFA92 /* Pods-PandaFit WatchKit Extension.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PandaFit WatchKit Extension.release.xcconfig"; path = "Pods/Target Support Files/Pods-PandaFit WatchKit Extension/Pods-PandaFit WatchKit Extension.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC7A29C21D8C944C006D04E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C4B9AF71A85B0774E69A8E5 /* Pods_PandaFit.framework in Frameworks */,
+				DC5C3B7D1D8D44B0003349E8 /* HealthKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7A29E31D8C944C006D04E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				47D8A6FA51959841C39C090D /* Pods_PandaFit_WatchKit_Extension.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB3984159FAA86CEE426E94E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07DB1B7F35EB293B46BF86D6 /* Pods_PandaFit_WatchKit_App.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A01E054AEE3621FC2CD0BB8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D7E423A337E377C69AE33C70 /* Pods-PandaFit.debug.xcconfig */,
+				7C9BCE9EF609D6226CE99CAD /* Pods-PandaFit.release.xcconfig */,
+				A8BA41AE778436D0A489B1C9 /* Pods-PandaFit WatchKit App.debug.xcconfig */,
+				B59CB3E9CCAB43BAB7CE4D06 /* Pods-PandaFit WatchKit App.release.xcconfig */,
+				2FC171837E20085A38468E8C /* Pods-PandaFit WatchKit Extension.debug.xcconfig */,
+				E2A8DD603A622DEEBA1FFA92 /* Pods-PandaFit WatchKit Extension.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DC7A29BC1D8C944C006D04E4 = {
+			isa = PBXGroup;
+			children = (
+				DCE9BECE1D8CB6C80074A34F /* Shared */,
+				DC7A29C71D8C944C006D04E4 /* PandaFit */,
+				DC7A29DB1D8C944C006D04E4 /* PandaFit WatchKit App */,
+				DC7A29EA1D8C944C006D04E4 /* PandaFit WatchKit Extension */,
+				DC7A29C61D8C944C006D04E4 /* Products */,
+				DC7A2A061D8C98F3006D04E4 /* Frameworks */,
+				7A01E054AEE3621FC2CD0BB8 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		DC7A29C61D8C944C006D04E4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC7A29C51D8C944C006D04E4 /* PandaFit.app */,
+				DC7A29D71D8C944C006D04E4 /* PandaFit WatchKit App.app */,
+				DC7A29E61D8C944C006D04E4 /* PandaFit WatchKit Extension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC7A29C71D8C944C006D04E4 /* PandaFit */ = {
+			isa = PBXGroup;
+			children = (
+				DCF881E71D8CE0D0000F9C76 /* PandaFit.entitlements */,
+				DCE9BED91D8CDA9B0074A34F /* ViewControllers */,
+				DC7A29C81D8C944C006D04E4 /* AppDelegate.swift */,
+				DC7A29CC1D8C944C006D04E4 /* Main.storyboard */,
+				DC7A29CF1D8C944C006D04E4 /* Assets.xcassets */,
+				DC7A29D11D8C944C006D04E4 /* LaunchScreen.storyboard */,
+				DC7A29D41D8C944C006D04E4 /* Info.plist */,
+				DC7A2A031D8C98DD006D04E4 /* PGHealthKitManager.swift */,
+				DCE9BED51D8CC3F20074A34F /* PGNetworkController.swift */,
+			);
+			path = PandaFit;
+			sourceTree = "<group>";
+		};
+		DC7A29DB1D8C944C006D04E4 /* PandaFit WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				DC064B361D8D5C8F0040BFDF /* Assets.xcassets */,
+				DC7A29DC1D8C944C006D04E4 /* Interface.storyboard */,
+				DC7A29E11D8C944C006D04E4 /* Info.plist */,
+			);
+			path = "PandaFit WatchKit App";
+			sourceTree = "<group>";
+		};
+		DC7A29EA1D8C944C006D04E4 /* PandaFit WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DC7A29ED1D8C944C006D04E4 /* StatusInterfaceController.swift */,
+				DC7A29F11D8C944C006D04E4 /* NotificationController.swift */,
+				DC7A29F31D8C944C006D04E4 /* Assets.xcassets */,
+				DC7A29F51D8C944C006D04E4 /* Info.plist */,
+				DC7A29EB1D8C944C006D04E4 /* Supporting Files */,
+				DC0A07701D8DD0A10008E284 /* PFWatchNetworkController.swift */,
+			);
+			path = "PandaFit WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		DC7A29EB1D8C944C006D04E4 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				DC7A29EC1D8C944C006D04E4 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		DC7A2A061D8C98F3006D04E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC5C3B7C1D8D44B0003349E8 /* HealthKit.framework */,
+				CEB2AAA63B00A83D8CB4099D /* Pods_PandaFit.framework */,
+				100A1BFEC29D10869FD8494E /* Pods_PandaFit_WatchKit_App.framework */,
+				28236F9F0EF80AAB6F768E96 /* Pods_PandaFit_WatchKit_Extension.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DCE9BECE1D8CB6C80074A34F /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				DCE9BECC1D8CB1940074A34F /* Panda.swift */,
+				DCE9BED01D8CC2680074A34F /* Media.xcassets */,
+			);
+			name = Shared;
+			sourceTree = "<group>";
+		};
+		DCE9BED91D8CDA9B0074A34F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				DC7A29CA1D8C944C006D04E4 /* StatusViewController.swift */,
+				DCE9BED71D8CD0A00074A34F /* LevelSelectionViewController.swift */,
+				DC0A07691D8D6C9E0008E284 /* FriendsViewController.swift */,
+				DC0A076D1D8D6CCD0008E284 /* FriendTableViewCell.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC7A29C41D8C944C006D04E4 /* PandaFit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7A2A001D8C944C006D04E4 /* Build configuration list for PBXNativeTarget "PandaFit" */;
+			buildPhases = (
+				11CCEF64AB6853A0079A4E2C /* [CP] Check Pods Manifest.lock */,
+				DC7A29C11D8C944C006D04E4 /* Sources */,
+				DC7A29C21D8C944C006D04E4 /* Frameworks */,
+				DC7A29C31D8C944C006D04E4 /* Resources */,
+				DC7A29FF1D8C944C006D04E4 /* Embed Watch Content */,
+				380CE1391B9CA4C642D672D3 /* [CP] Embed Pods Frameworks */,
+				36183774A748A7A2E259593F /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7A29DA1D8C944C006D04E4 /* PBXTargetDependency */,
+			);
+			name = PandaFit;
+			productName = PandaFit;
+			productReference = DC7A29C51D8C944C006D04E4 /* PandaFit.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DC7A29D61D8C944C006D04E4 /* PandaFit WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7A29FC1D8C944C006D04E4 /* Build configuration list for PBXNativeTarget "PandaFit WatchKit App" */;
+			buildPhases = (
+				20976B9B5B0AA10A897BF84C /* [CP] Check Pods Manifest.lock */,
+				DC7A29D51D8C944C006D04E4 /* Resources */,
+				DC7A29FB1D8C944C006D04E4 /* Embed App Extensions */,
+				FB3984159FAA86CEE426E94E /* Frameworks */,
+				20ADD67AE545F419B359E390 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DC7A29E91D8C944C006D04E4 /* PBXTargetDependency */,
+			);
+			name = "PandaFit WatchKit App";
+			productName = "PandaFit WatchKit App";
+			productReference = DC7A29D71D8C944C006D04E4 /* PandaFit WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		DC7A29E51D8C944C006D04E4 /* PandaFit WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7A29F81D8C944C006D04E4 /* Build configuration list for PBXNativeTarget "PandaFit WatchKit Extension" */;
+			buildPhases = (
+				37C031B4E7EF38593C125F83 /* [CP] Check Pods Manifest.lock */,
+				DC7A29E21D8C944C006D04E4 /* Sources */,
+				DC7A29E31D8C944C006D04E4 /* Frameworks */,
+				DC7A29E41D8C944C006D04E4 /* Resources */,
+				088C2D8F8BD3A8FFDBB774AA /* [CP] Embed Pods Frameworks */,
+				1C83F4EE3E11BDEBA65A11EC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "PandaFit WatchKit Extension";
+			productName = "PandaFit WatchKit Extension";
+			productReference = DC7A29E61D8C944C006D04E4 /* PandaFit WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC7A29BD1D8C944C006D04E4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = "Felix Sonntag";
+				TargetAttributes = {
+					DC7A29C41D8C944C006D04E4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UC22W52F8S;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.iOS = {
+								enabled = 0;
+							};
+							com.apple.HealthKit = {
+								enabled = 1;
+							};
+						};
+					};
+					DC7A29D61D8C944C006D04E4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UC22W52F8S;
+						ProvisioningStyle = Automatic;
+					};
+					DC7A29E51D8C944C006D04E4 = {
+						CreatedOnToolsVersion = 8.0;
+						DevelopmentTeam = UC22W52F8S;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DC7A29C01D8C944C006D04E4 /* Build configuration list for PBXProject "PandaFit" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC7A29BC1D8C944C006D04E4;
+			productRefGroup = DC7A29C61D8C944C006D04E4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC7A29C41D8C944C006D04E4 /* PandaFit */,
+				DC7A29D61D8C944C006D04E4 /* PandaFit WatchKit App */,
+				DC7A29E51D8C944C006D04E4 /* PandaFit WatchKit Extension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC7A29C31D8C944C006D04E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7A29D31D8C944C006D04E4 /* LaunchScreen.storyboard in Resources */,
+				DC7A29D01D8C944C006D04E4 /* Assets.xcassets in Resources */,
+				DCE9BED11D8CC2680074A34F /* Media.xcassets in Resources */,
+				DC7A29CE1D8C944C006D04E4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7A29D51D8C944C006D04E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE9BED41D8CC2710074A34F /* Media.xcassets in Resources */,
+				DC064B371D8D5C8F0040BFDF /* Assets.xcassets in Resources */,
+				DC7A29DE1D8C944C006D04E4 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7A29E41D8C944C006D04E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCE9BED31D8CC2700074A34F /* Media.xcassets in Resources */,
+				DC7A29F41D8C944C006D04E4 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		088C2D8F8BD3A8FFDBB774AA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PandaFit WatchKit Extension/Pods-PandaFit WatchKit Extension-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		11CCEF64AB6853A0079A4E2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		1C83F4EE3E11BDEBA65A11EC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PandaFit WatchKit Extension/Pods-PandaFit WatchKit Extension-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		20976B9B5B0AA10A897BF84C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		20ADD67AE545F419B359E390 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PandaFit WatchKit App/Pods-PandaFit WatchKit App-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		36183774A748A7A2E259593F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PandaFit/Pods-PandaFit-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37C031B4E7EF38593C125F83 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		380CE1391B9CA4C642D672D3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PandaFit/Pods-PandaFit-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC7A29C11D8C944C006D04E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC0A076E1D8D6CCD0008E284 /* FriendTableViewCell.swift in Sources */,
+				DCE9BED81D8CD0A00074A34F /* LevelSelectionViewController.swift in Sources */,
+				DC7A2A041D8C98DE006D04E4 /* PGHealthKitManager.swift in Sources */,
+				DC7A29CB1D8C944C006D04E4 /* StatusViewController.swift in Sources */,
+				DC7A29C91D8C944C006D04E4 /* AppDelegate.swift in Sources */,
+				DC0A076A1D8D6C9E0008E284 /* FriendsViewController.swift in Sources */,
+				DCE9BECD1D8CB1940074A34F /* Panda.swift in Sources */,
+				DCE9BED61D8CC3F20074A34F /* PGNetworkController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DC7A29E21D8C944C006D04E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7A29F21D8C944C006D04E4 /* NotificationController.swift in Sources */,
+				DC0A076F1D8DCF650008E284 /* PGNetworkController.swift in Sources */,
+				DC7A29EE1D8C944C006D04E4 /* StatusInterfaceController.swift in Sources */,
+				DCE9BECF1D8CB6D20074A34F /* Panda.swift in Sources */,
+				DC0A07711D8DD0A10008E284 /* PFWatchNetworkController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DC7A29DA1D8C944C006D04E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC7A29D61D8C944C006D04E4 /* PandaFit WatchKit App */;
+			targetProxy = DC7A29D91D8C944C006D04E4 /* PBXContainerItemProxy */;
+		};
+		DC7A29E91D8C944C006D04E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC7A29E51D8C944C006D04E4 /* PandaFit WatchKit Extension */;
+			targetProxy = DC7A29E81D8C944C006D04E4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DC7A29CC1D8C944C006D04E4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7A29CD1D8C944C006D04E4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DC7A29D11D8C944C006D04E4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7A29D21D8C944C006D04E4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DC7A29DC1D8C944C006D04E4 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7A29DD1D8C944C006D04E4 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC7A29F61D8C944C006D04E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC7A29F71D8C944C006D04E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC7A29F91D8C944C006D04E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2FC171837E20085A38468E8C /* Pods-PandaFit WatchKit Extension.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = UC22W52F8S;
+				INFOPLIST_FILE = "PandaFit WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sonntag.PandaFit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DC7A29FA1D8C944C006D04E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E2A8DD603A622DEEBA1FFA92 /* Pods-PandaFit WatchKit Extension.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = UC22W52F8S;
+				INFOPLIST_FILE = "PandaFit WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sonntag.PandaFit.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		DC7A29FD1D8C944C006D04E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8BA41AE778436D0A489B1C9 /* Pods-PandaFit WatchKit App.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UC22W52F8S;
+				IBSC_MODULE = PandaFit_WatchKit_Extension;
+				INFOPLIST_FILE = "PandaFit WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sonntag.PandaFit.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Debug;
+		};
+		DC7A29FE1D8C944C006D04E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B59CB3E9CCAB43BAB7CE4D06 /* Pods-PandaFit WatchKit App.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = UC22W52F8S;
+				IBSC_MODULE = PandaFit_WatchKit_Extension;
+				INFOPLIST_FILE = "PandaFit WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sonntag.PandaFit.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 2.2;
+			};
+			name = Release;
+		};
+		DC7A2A011D8C944C006D04E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7E423A337E377C69AE33C70 /* Pods-PandaFit.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PandaFit/PandaFit.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UC22W52F8S;
+				INFOPLIST_FILE = PandaFit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sonntag.PandaFit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		DC7A2A021D8C944C006D04E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7C9BCE9EF609D6226CE99CAD /* Pods-PandaFit.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = PandaFit/PandaFit.entitlements;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = UC22W52F8S;
+				INFOPLIST_FILE = PandaFit/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = de.sonntag.PandaFit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC7A29C01D8C944C006D04E4 /* Build configuration list for PBXProject "PandaFit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7A29F61D8C944C006D04E4 /* Debug */,
+				DC7A29F71D8C944C006D04E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7A29F81D8C944C006D04E4 /* Build configuration list for PBXNativeTarget "PandaFit WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7A29F91D8C944C006D04E4 /* Debug */,
+				DC7A29FA1D8C944C006D04E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7A29FC1D8C944C006D04E4 /* Build configuration list for PBXNativeTarget "PandaFit WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7A29FD1D8C944C006D04E4 /* Debug */,
+				DC7A29FE1D8C944C006D04E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7A2A001D8C944C006D04E4 /* Build configuration list for PBXNativeTarget "PandaFit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7A2A011D8C944C006D04E4 /* Debug */,
+				DC7A2A021D8C944C006D04E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DC7A29BD1D8C944C006D04E4 /* Project object */;
+}
