@@ -1,0 +1,6 @@
+framework module Pods_PandaFit_WatchKit_App {
+  umbrella header "Pods-PandaFit WatchKit App-umbrella.h"
+
+  export *
+  module * { export * }
+}
